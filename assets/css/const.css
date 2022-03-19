@@ -1,0 +1,18 @@
+*{ 
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-size: 100%;
+}
+
+body {
+    background-image: url(../img/istockphoto-1202844731-1024x1024.jpg);
+}
+.app {
+    width: 100%;
+    overflow: hidden;
+}
+.container {
+    margin-top: 20px
+}

@@ -1,0 +1,39 @@
+@media (max-width:1023px) {
+    .navbar_home {
+        margin-left: 20px;
+    }
+    .navbar_list {
+        height: 0;
+        width: 100%;
+        position: relative;
+        overflow: hidden;
+        transition: all 0.3s linear;
+    }
+    .navbar_icon-phone {
+        display: block;
+        color: #fff;
+        font-size: 30px;
+        cursor: pointer;
+        padding: 15px 0;
+        margin-right: 20px;
+        margin-left: auto;
+    }
+    .navbar_item {
+        display: block;
+        border-radius: 20px;
+    }
+    #checkbox_navbar:checked + .navbar_list {
+        height: 380px;
+    }
+    .navbar__drop-down {
+        position: none;
+        z-index: 11;
+    }
+    .navbar_item.active .navbar__drop-down {
+        display: block;
+        height: 180px;
+    }
+
+@media (max-width:740px) {
+    
+}

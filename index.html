@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/gird.css">
+    <link rel="stylesheet" href="./assets/css/const.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/reponsive.css">
+</head>
+
+<body>
+    <div class="app">
+        <header>
+            <div class="header_logo">
+                <img src="./assets/img/coollogo_com-8766837.gif" alt="" class="header_img">
+            </div>
+            <div class="nav_color">
+                <div class="grid wide">
+                    <div class="navbar">
+                        <h3 class="navbar_home">
+                            <a href="">Navbar</a>
+                        </h3>
+                        <label for="checkbox_navbar" class="navbar_icon-phone">
+                            <i class="fa-solid fa-bars "></i>
+                        </label>
+                        <input type="checkbox" name="" id="checkbox_navbar">
+                        <ul class="navbar_list">
+                            <li class="navbar_item">
+                                <a href="#">
+                                    <i class="fa-solid fa-gauge"></i>
+                                    Dashboard
+                                    <i class="fa-solid fa-angle-down"></i>
+                                </a>
+                                <ul class="navbar__drop-down">
+                                    <li class="dropdown-item show_form"><a href="#">Thêm mới</a></li>
+                                    <li class="dropdown-item"><a href="">item 2</a></li>
+                                    <li class="dropdown-item"><a href="">item 3</a></li>
+                                    <li class="dropdown-item"><a href="">item 4</a></li>
+                                </ul>
+                            </li>
+                            <li class="navbar_item">
+                                <a href="#">
+                                    <i class="fa-solid fa-address-book"></i>
+                                    Address Book
+                                    <i class="fa-solid fa-angle-down"></i>
+                                </a>
+                                <ul class="navbar__drop-down">
+                                    <li class="dropdown-item"><a href="">item 1</a></li>
+                                    <li class="dropdown-item"><a href="">item 2</a></li>
+                                    <li class="dropdown-item"><a href="">item 3</a></li>
+                                    <li class="dropdown-item"><a href="">item 4</a></li>
+                                </ul>
+                            </li>
+                            <li class="navbar_item">
+                                <a href="#">
+                                    <i class="fa-solid fa-notes-medical"></i>
+                                    Components
+                                </a>
+                            </li>
+                            <li class="navbar_item">
+                                <a href="#">
+                                    <i class="fa-solid fa-calendar-days"></i>
+                                    Calendar
+                                </a>
+                            </li>
+                            <li class="navbar_item">
+                                <a href="#">
+                                    <i class="fa-solid fa-chart-column"></i>
+                                    Charts
+                                </a>
+                            </li>
+                            <li class="navbar_item">
+                                <a href="#">
+                                    <i class="fa-solid fa-file"></i>
+                                    Documents
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </header>
+    
+        <div class="container">
+            <div class="grid wide">
+                <div class="row js_row">
+
+                    <div class="col l-3 m-4 c-6">
+                        <div class="card_border">
+                            <div class="card">
+                                <span class="card_badge">trả góp 0%</span>
+                                <div class="card_img">
+                                    <img src="https://cdn.tgdd.vn/Products/Images/42/261888/realme-c35-black-thumb-600x600.jpg" alt="">
+                                </div>
+                                <div class="card_information">
+                                    <h4 class="card_product">Samsung Galaxy S22 Ultra 5G 256GB</h4>
+                                    <div class="card_discount">35.990.000<span class="card_unit">đ</span> </div>
+                                    <div class="card_price">33.990.000<span class="card_unit">đ</span> </div>
+                                    <div class="card_present">Quà 450 000<span class="card_unit">đ</span> </div>
+                                    <div class="card_star">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star-half"></i>
+                                        <span class="card_star-count">234</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+
+
+                </div>
+            </div>
+        </div>
+
+        
+
+        <footer>
+
+        </footer>
+    </div>
+    <!-- Modal -->
+
+    <div class="modal modal-hide">
+        <form action="#" name="form-input">
+            <i class="fa-solid fa-square-xmark form_icon-time"></i>
+            <h1 class="form_banner">Nhập thông tin sản phẩm</h1>
+            <div class="form_container">
+                <label for="input-1">Tên sản phẩm</label>
+                <input type="text" name="phoneName" id="input-1" placeholder="tên sản phẩm">
+                <label for="input-2">Giá sản phẩm</label>
+                <input type="text" name="price" id="input-2" placeholder="Giá sản phẩm">
+                <label for="input-3">Hình ảnh</label>
+                <input type="text" name="img" id="input-3" placeholder="Dán link hình ảnh vào đây">
+                <button type="button" class="form_submit">Xác nhận</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="./assets/js/app.js"></script>
+    <script>
+        // Nav
+        var navItems = document.querySelectorAll('.navbar_item');
+            navItems.forEach(navItem => {
+            navItem.onclick = function () {
+                if(this.classList.contains('active')) {
+                    this.classList.remove('active');
+                    return;
+                }
+                navItems.forEach(item => {
+                    item.classList.remove('active');
+                })
+                this.classList.add('active');
+            }
+        })
+        // Card
+        const card = document.querySelector('.card');
+        const cardBorder = document.querySelector('.card_border');
+        card.onmouseover = function(e) {
+            Object.assign(cardBorder.style, {
+                boxShadow: '0 0 10px #999',
+            })
+        }
+        card.onmouseout = function(e) {
+            cardBorder.style.boxShadow = 'none';
+        }
+        // Modal
+        const modalBtn = document.querySelector('.modal');
+        const showFormBtn = document.querySelector('.show_form');
+        modalBtn.onclick = (e) => {
+            if (e.target.classList.contains('modal') || e.target.classList.contains('form_icon-time')) {
+                modalBtn.classList.add('modal-hide');
+            }
+        }
+        showFormBtn.onclick = function() {
+            modalBtn.classList.remove('modal-hide');
+        }
+    </script>
+</body>
+</html>
